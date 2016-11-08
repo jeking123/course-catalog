@@ -1,1 +1,27 @@
 /* YOUR STYLES */
+/*eastern red #a10022*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cd-header {
+    background: #a10022;
+}
+
+/* Content Containers */
+.cd-gallery li {
+    background: teal;
+    padding: 1em;
+}
+
+/* Grid View */
+
+.grid li.mix {
+    
+}
+.list li.mix {
+    width: 100%;
+}
+.list li.mix p {
+    display: none;
+}

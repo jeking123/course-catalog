@@ -4,14 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/demo.css"> <!-- Resource style -->
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!-- CSS reset -->
+	<link rel="stylesheet" href="css/reset.css"> 
+	
+	<!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> 
+    
 	<!-- YOUR STYLES -->
 	<link rel="stylesheet" href="css/styles.css">	
-
 
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
@@ -30,11 +33,15 @@
 			<div class="cd-tab-filter">
 				<ul class="cd-filters">
 					<li class="placeholder"> 
-						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+						<a data-type="all" href="#0">All</a> 
+						<!-- selected option on mobile -->
 					</li> 
+					 <!--Resets All Filters-->
 					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
-					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
+                    <!--	-->
+					<li class="filter" data-filter=".req"><a href="#0" data-type="req">Required</a></li>
+					
+					<li class="filter" data-filter=".elect"><a href="#0" data-type="elect">Electives</a></li>
 					
 					<!-- Grid/List Views -->
 					<li>---</li>
@@ -44,11 +51,12 @@
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
-
+        <!--   Content to Show/Hide     -->
 		<section class="cd-gallery">
 			<ul>
-				<li class="mix color-3 check1 radio2 option3">
-					<h1>DESN 000</h1>
+				<li class="mix req prereqs 100 abc ">
+					<h1>DESN 100</h1>
+					<h3>Drawing For Communication</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -56,8 +64,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</li>
-				<li class="mix color-2 check2 radio2 option2">
-					<h1>DESN 000</h1>
+				<li class="mix req 100 abc ">
+					<h1>DESN 120</h1>
+					<h3>Dealing With Colin</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -65,112 +74,33 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</li>
-				<li class="mix color-1 check3 radio3 option1">
-					<h1>DESN 000</h1>
+				<li class="mix elect">
+					<h1>DESN 480</h1>
+					<h3>Professional Practice</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-1 check3 radio2 option4">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-1 check1 radio3 option2">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-2 check2 radio3 option3">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-2 check2 radio2 option1">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-1 check1 radio3 option4">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-2 check1 radio2 option3">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-1 check3 radio2 option4">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-1 check3 radio3 option2">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li class="mix color-2 check1 radio3 option1">
-					<h1>DESN 000</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
+				</li>				
 
 				<!-- EMPTY ELEMENTS FOR LAYOUT -->
 				<li class="gap"></li>
 				<li class="gap"></li>
 				<li class="gap"></li>
 			</ul>
-			<div class="cd-fail-message">No results found</div>
+			<div class="cd-fail-message">¯\_(ツ)_/¯ No results found, Sorry.</div>
 		</section> <!-- cd-gallery -->
-
+       
+        <!--Search Filter-->
 		<div class="cd-filter">
 			<form>
 				<div class="cd-filter-block">
 					<h4>Search</h4>
 					
 					<div class="cd-filter-content">
-						<input type="search" placeholder="Try color-1...">
+						<input type="search" placeholder="Choose Your Adventure!">
 					</div> <!-- cd-filter-content -->
 				</div> <!-- cd-filter-block -->
 
@@ -179,18 +109,18 @@
 
 					<ul class="cd-filter-content cd-filters list">
 						<li>
-							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-			    			<label class="checkbox-label" for="checkbox1">Option 1</label>
+							<input class="filter" data-filter=".Prereq" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Prereqs</label>
 						</li>
 
 						<li>
-							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-							<label class="checkbox-label" for="checkbox2">Option 2</label>
+							<input class="filter" data-filter=".100" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">level 100</label>
 						</li>
 
 						<li>
-							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-							<label class="checkbox-label" for="checkbox3">Option 3</label>
+							<input class="filter" data-filter=".200" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Level 200</label>
 						</li>
 					</ul> <!-- cd-filter-content -->
 				</div> <!-- cd-filter-block -->
@@ -202,7 +132,7 @@
 						<div class="cd-select cd-filters">
 							<select class="filter" name="selectThis" id="selectThis">
 								<option value="">Choose an option</option>
-								<option value=".option1">Option 1</option>
+								<option value=".abc">ABC</option>
 								<option value=".option2">Option 2</option>
 								<option value=".option3">Option 3</option>
 								<option value=".option4">Option 4</option>
