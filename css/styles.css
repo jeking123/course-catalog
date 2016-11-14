@@ -217,6 +217,7 @@ lightblue
     }
 }
 
+/* Flex Box Equals Out Grid Boxes */
 .gallery {
     display: -webkit-flex;
     -webkit-flex-flow: row wrap;
