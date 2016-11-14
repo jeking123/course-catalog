@@ -216,3 +216,10 @@ lightblue
         width: 80%;
     }
 }
+
+.gallery {
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+    -webkit-align-content: flex-start;
+}
